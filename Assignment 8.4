@@ -1,0 +1,18 @@
+def Converter(string):
+    li = set(string.split())
+    return li
+
+fname = input("Enter file name: ")
+fh = open(fname)
+
+sortedset = Converter(fh.read())
+
+
+sortedlist = []
+for word in sortedset:
+    sortedlist.append(word)
+
+sortedlist.sort()
+
+print(sortedlist)
+
